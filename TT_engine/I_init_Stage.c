@@ -9,7 +9,6 @@ static void doPlayer(void);
 static void doFighters(void);
 static void doBullet(void);
 static void spawnEnemies(void);
-
 static void fireBullet(void);
 static void drawPlayer(void);
 static void drawBullet(void);
@@ -234,7 +233,7 @@ static void draw(void)
     drawFighters();
 }
 
-/* óðà ðèñîâà÷*/
+/* Ã³Ã°Ã  Ã°Ã¨Ã±Ã®Ã¢Ã Ã·*/
 static void drawPlayer(void)
 {
     blit(player->I_Tex, player->x, player->y);
