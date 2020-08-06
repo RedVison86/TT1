@@ -21,7 +21,6 @@
 
 /* 1level arch */
 extern void I_init(void);
-extern void G_demoLoop(void);
 
 
 /* 2level arch */
@@ -41,6 +40,6 @@ extern void R_render_present(void);
 extern void blit(SDL_Texture *tex, int x, int y);
 extern SDL_Texture *loadTexture(char *filename);
 extern int collision(int x1, int y1, int w1, int h1, int x2, int y2, int w2, int h2);
-
+extern void calcSlope(int x1, int y1, int x2, int y2, float *dx, float *dy);
 
 #endif // E_MAIN_H_INCLUDED
